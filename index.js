@@ -9,7 +9,7 @@ try {
   )
   const signedUrl = signer.getSignedUrl({
     url: core.getInput('url'),
-    expires: core.getInput('expires')
+    expires: parseInt(core.getInput('expires'), 10)
   })
   console.log(`Successfully signed URL: ${signedUrl}`)
   core.setOutput("url", signedUrl)
