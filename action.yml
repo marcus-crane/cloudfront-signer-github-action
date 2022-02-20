@@ -1,0 +1,22 @@
+name: "Cloudfront signer"
+description: "Generates a signed AWS Cloudfront URL"
+inputs:
+  privateKey:
+    description: "A public key as a string"
+    required: true
+  expires:
+    description: "The time that your signed URL should last for (unix timestamp)"
+    required: true
+  url:
+    description: "The URL you would like to sign (incl. any query strings)"
+    required: true
+  cfDistId:
+    description: "The ID of the Cloudfront distribution you're using"
+    required: true
+outputs:
+  url:
+    description: "A signed Cloudfront URL"
+runs:
+  using: 'node16'
+  main: 'index.js'
+    

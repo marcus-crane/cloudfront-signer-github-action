@@ -1,0 +1,14 @@
+{
+  "name": "cloudfront-signer-github-action",
+  "version": "1.0.0",
+  "description": "A basic Github Action for signing Cloudfront URLs",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Marcus Crane <marcus@utf9k.net>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "aws-sdk": "^2.1077.0"
+  }
+}
